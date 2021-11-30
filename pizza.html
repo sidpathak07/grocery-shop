@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza's</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Coda+Caption:wght@800&family=Courgette&display=swap"
+        rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/b5468c0f73.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="cake.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Merienda+One&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pizza.css">
+<body>
+    <header>
+        <nav class="navbar margin-bottom-10px">
+            <img id="logo" src="images/Free_Sample_By_Wix.jpg" alt="" />
+            <p id="logoName">Khadadu's</p>
+            <ul class="mainUl">
+                <li id="home"><a href="index.html"> Home</a></li>
+                <li><a href="MyOrders.html">My Orders</a></li>
+            </ul>
+            <a href="mycart.html" id="cart" class="a">
+                <i class="fas fa-shopping-cart fa-2x"></i></a>
+            <span id="username"></span>
+        </nav>
+    </header>
+    <section id="special" class="polaroid">
+        <h2 class="center"></h2>
+        <div class="special">
+            <div class="flipcard">
+                <div class="card">
+                    <div class="front">
+                        <img width="300px" height="290px" src="images/pizza-on-plate-with-slicer-and-fork-2260200.jpg" alt="">
+                    </div>
+                    <div class="back">
+                        Peppronie Pizza<br>
+                        Special Price-100/-<br>
+                        <button class="btn" onclick="addcart(`images/pizza-on-plate-with-slicer-and-fork-2260200.jpg`,`Peppronie Pizza`,100)">Buy<i class="fas fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="flipcard2">
+                <div class="card2 polaroid">
+                    <div class="front2">
+                        <img width="300px" height="290px" src="images/close-up-photography-of-pizza-1166120.jpg" alt="">
+                    </div>
+                    <div class="back2">
+                        Cheese Overload <br>
+                        Special Price-80/-<br>
+                        <button class="btn" onclick="addcart(`images/close-up-photography-of-pizza-1166120.jpg`,`Cheese Overload`,80)">Buy<i class="fas fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <h3 style="text-align:center;font-family: 'Merienda One', cursive;" class="ft-size-2rem">Pizza's</h3>
+    <section id="pizza-List" class="polaroid">
+        <div class="pizzali">
+            <div>
+                <img width="150px" height="150px" src="images/pepperoni-pizza-803290.jpg" alt="">
+            </div>
+            <aside>
+                <h4>Pepperoni Pizza withextra cheese</h4>
+                <p>Price:-100/-</p>
+                <button class="btn" onclick="addcart(`images/pepperoni-pizza-803290.jpg`,`Pepperoni Pizza withextra cheese`,100)">Buy<i class="fas fa-cart-plus"></i></button>
+            </aside>
+        </div>
+        <div class="pizzali">
+            <div>
+                <img width="150px" height="150px" src="images/pizza-3007395_1280.jpg" alt="">
+            </div>
+            <aside>
+                <h4>Olive Pizza with Capsicum</h4>
+                <p>Price:-100/-</p>
+                <button class="btn" onclick="addcart(`images/pizza-3007395_1280.jpg`,`Olive Pizza with Capsicum`,100)">Buy<i class="fas fa-cart-plus"></i></button>
+            </aside>
+        </div>
+        <div class="pizzali">
+            <div>
+                <img width="150px" height="150px" src="images/zaid-hussain-sayed-HGPlnmepMAA-unsplash.jpg" alt="">
+            </div>
+            <aside>
+                <h4>Olive with extra cheese</h4>
+                <p>Price:-120/-</p>
+                <button class="btn" onclick="addcart(`images/zaid-hussain-sayed-HGPlnmepMAA-unsplash.jpg`,`Olive with extra cheese`,120)">Buy<i class="fas fa-cart-plus"></i></button>
+            </aside>
+        </div>
+        <div class="pizzali">
+            <div>
+                <img width="150px" height="150px" src="images/pizzaback1.jpg" alt="">
+            </div>
+            <aside>
+                <h4>Cheese Overload</h4>
+                <p>Price:-100/-</p>
+                <button class="btn" onclick="addcart(`images/pizzaback1.jpg`,`Cheese Overload`,100)">Buy<i class="fas fa-cart-plus"></i></button>
+            </aside>
+        </div>
+        <div class="pizzali">
+            <div>
+                <img width="150px" height="150px" src="images/nicolas-perondi-UxRhrU8fPHQ-unsplash.jpg" alt="">
+            </div>
+            <aside>
+                <h4>Thin Crust Pizza</h4>
+                <p>Price:-130/-</p>
+                <button class="btn" class="btn" onclick="addcart(`images/nicolas-perondi-UxRhrU8fPHQ-unsplash.jpg`,`Thin Crust Pizza`,130)">Buy<i class="fas fa-cart-plus"></i></button>
+            </aside>
+        </div>
+        <div class="pizzali">
+            <div>
+                <img width="150px" height="150px" src="images/beef-cheese-circle-delicious-262977 (1).jpg" alt="">
+            </div>
+            <aside>
+                <h4>Beef Cheese Pizza</h4>
+                <p>Price:-150/-</p>
+                <button class="btn" onclick="addcart(`images/beef-cheese-circle-delicious-262977 (1).jpg`,`Beef Cheese Pizza`,150)">Buy<i class="fas fa-cart-plus"></i></button>
+            </aside>
+        </div>
+        <div class="pizzali">
+            <div>
+                <img width="150px" height="150px" src="images/karthik-garikapati-oBbTc1VoT-0-unsplash.jpg" alt="">
+            </div>
+            <aside>
+                <h4>Corn and Capsicum</h4>
+                <p>Price:-100/-</p>
+                <button class="btn" onclick="addcart(`images/karthik-garikapati-oBbTc1VoT-0-unsplash.jpg`,`Corn and Capsicum`,100)">Buy<i class="fas fa-cart-plus"></i></button>
+            </aside>
+        </div>
+        <div class="pizzali">
+            <div>
+                <img width="150px" height="150px" src="images/dinner-fast-food-lunch-meal-3644.jpg" alt="">
+            </div>
+            <aside>
+                <h4>Magereta</h4>
+                <p>Price:-70/-</p>
+                <button class="btn" onclick="addcart(`images/dinner-fast-food-lunch-meal-3644.jpg`,`Magereta`,70)">Buy<i class="fas fa-cart-plus"></i></button>
+            </aside>
+        </div>
+        <div class="pizzali">
+            <div>
+                <img width="150px" height="150px" src="images/pizza-with-egg-photo-845812.jpg" alt="">
+            </div>
+            <aside>
+                <h4>Pizza with Egg</h4>
+                <p>Price:-110/-</p>
+                <button class="btn" onclick="addcart(`images/pizza-with-egg-photo-845812.jpg`,`Pizza with Egg`,110)">Buy<i class="fas fa-cart-plus"></i></button>
+            </aside>
+        </div>
+    </section>
+    <span class="ft-size-2rem" style="font-family: 'Merienda One', cursive;">Cake's</span><a href="cake.html"
+        class="a ft-size-2rem"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a><br>
+    <span class="ft-size-2rem" style="font-family: 'Merienda One', cursive;">Burger's</span><a href="burger.html"
+        class="a ft-size-2rem"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a><br>
+    <span class="ft-size-2rem" style="font-family: 'Merienda One', cursive;">Pasta's</span><a href="pasta.html"
+        class="a ft-size-2rem"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a><br>
+    <footer class="center footer">
+        <h2>Follow</h2>
+        <span class="mg-right-5"><i class="fab fa-facebook-f fa-2x"></i></span>
+        <span class="mg-right-5"><i class="fab fa-instagram fa-2x"></i></span>
+        <span class="mg-right-5"><i class="fab fa-twitter fa-2x"></i></span>
+        <p class="ft-size-1-5rem">#Khadadu's</p>
+    </footer>
+</body>
+<script src="pizza.js"></script>
+
+</html>

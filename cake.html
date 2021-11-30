@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake's</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Coda+Caption:wght@800&family=Courgette&display=swap"
+        rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/b5468c0f73.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="cake.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Merienda+One&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@1&display=swap" rel="stylesheet">
+
+<body>
+    <header>
+        <nav class="navbar margin-bottom-10px">
+            <img id="logo" src="images/Free_Sample_By_Wix.jpg" alt="" />
+            <p id="logoName">Khadadu's</p>
+            <ul class="mainUl">
+                <li id="home"><a href="index.html"> Home</a></li>
+                <li><a href="MyOrders.html">My Orders</a></li>
+            </ul>
+            <a href="mycart.html" id="cart" class="a">
+                <i class="fas fa-shopping-cart fa-2x"></i></a>
+            <span id="username"></span>
+        </nav>
+    </header>
+    <section id="special" class="polaroid">
+        <h2 class="center">New Launch</h2>
+        <div class="special">
+            <div class="flipcard">
+                <div class="card">
+                    <div class="front">
+                        <img width="150px" height="200px" src="images/cake-1282719_1280.jpg" alt="">
+                    </div>
+                    <div class="back">
+                        ButterScotch Cake <br>
+                        Special Price-200/- 250g <br>
+                        <button class="btn" onclick="addcart(`images/cake-1282719_1280.jpg`,`ButterScotch Cake`,200)">Buy<i class="fas fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="flipcard2">
+                <div class="card2 polaroid">
+                    <div class="front2">
+                        <img width="150px" height="200px" src="images/cake-1374069_1280.jpg" alt="">
+                    </div>
+                    <div class="back2">
+                        Berry Cake <br>
+                        Special Price-200/- 250g <br>
+                        <button class="btn" onclick="addcart(`images/cake-1374069_1280.jpg`,`Berry Cake`,200)">Buy<i class="fas fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <h3 style="text-align:center;font-family: 'Merienda One', cursive;" class="ft-size-2rem">Cake's</h3>
+    <section id="Cake-List" class="polaroid">
+        <div class="cakeli">
+            <div>
+                <img width="150px" height="150px" src="images/cheese-cake-with-strawberry-fruit-1098592.jpg" alt="">
+            </div>
+            <aside>
+                <h4>Cheese cake with strawberry</h4>
+                <p>Price:-250/-</p>
+                <button class="btn" onclick="addcart(`images/cheese-cake-with-strawberry-fruit-1098592.jpg`,`chesse-cake-with-strawberry`,250)">Buy<i class="fas fa-cart-plus"></i></button>
+            </aside>
+        </div>
+        <div class="cakeli">
+            <div>
+                <img width="150px" height="150px" src="images/cake-1282719_1280.jpg" alt="">
+            </div>
+            <aside>
+                <h4>ButterScoth Cake</h4>
+                <p>Price:-200/-</p>
+                <button class="btn" onclick="addcart(`images/cake-1282719_1280.jpg`,`ButterScotch Cake`,200)">Buy<i class="fas fa-cart-plus"></i></button>
+            </aside>
+        </div>
+        <div class="cakeli">
+            <div>
+                <img width="150px" height="150px" src="images/cake-1374069_1280.jpg" alt="">
+            </div>
+            <aside>
+                <h4>Berry Cake</h4>
+                <p>Price:-200/-</p>
+                <button class="btn" onclick="addcart(`images/cake-1374069_1280.jpg`,`Berry Cake`,200)">Buy<i class="fas fa-cart-plus"></i></button>
+            </aside>
+        </div>
+        <div class="cakeli">
+            <div>
+                <img width="150px" height="150px" src="images/cake-5375821_1280.jpg" alt="">
+            </div>
+            <aside>
+                <h4>Chocolate Cake</h4>
+                <p>Price:-150/-</p>
+                <button class="btn" onclick="addcart(`images/cake-5375821_1280.jpg`,`Chocolate Cake`,150)">Buy<i class="fas fa-cart-plus"></i></button>
+            </aside>
+        </div>
+        <div class="cakeli">
+            <div>
+                <img width="150px" height="150px" src="images/slice-cake-1854652.jpg" alt="">
+            </div>
+            <aside>
+                <h4>Cheese Chocolate Cake</h4>
+                <p>Price:-70/-</p>
+                <button class="btn" onclick="addcart(`images/slice-cake-1854652.jpg`,`Cheese Chocolate Cake`,70)">Buy<i class="fas fa-cart-plus"></i></button>
+            </aside>
+        </div>
+        <div class="cakeli">
+            <div>
+                <img width="150px" height="150px" src="images/slice-of-cake-3093479.jpg" alt="">
+            </div>
+            <aside>
+                <h4>Walnut Cake</h4>
+                <p>Price:-80/-</p>
+                <button class="btn" onclick="addcart(`images/slice-of-cake-3093479.jpg`,`Walnut Cake`,80)">Buy<i class="fas fa-cart-plus"></i></button>
+            </aside>
+        </div>
+        <div class="cakeli">
+            <div>
+                <img width="150px" height="150px" src="images/slice-of-cake-on-saucer-2147857.jpg" alt="">
+            </div>
+            <aside>
+                <h4>Chocolate Mousse</h4>
+                <p>Price:-50/-</p>
+                <button class="btn" onclick="addcart(`images/slice-of-cake-on-saucer-2147857.jpg`,`Chocolate Mousse`,50)">Buy<i class="fas fa-cart-plus"></i></button>
+            </aside>
+        </div>
+    </section>
+    <span class="ft-size-2rem" style="font-family: 'Merienda One', cursive;">Pizza's</span><a href="pizza.html"
+        class="a ft-size-2rem"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a><br>
+    <span class="ft-size-2rem" style="font-family: 'Merienda One', cursive;">Burger's</span><a href="burger.html"
+        class="a ft-size-2rem"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a><br>
+    <span class="ft-size-2rem" style="font-family: 'Merienda One', cursive;">Pasta's</span><a href="pasta.html"
+        class="a ft-size-2rem"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a><br>
+    <footer class="center footer">
+        <h2>Follow</h2>
+        <span class="mg-right-5"><i class="fab fa-facebook-f fa-2x"></i></span>
+        <span class="mg-right-5"><i class="fab fa-instagram fa-2x"></i></span>
+        <span class="mg-right-5"><i class="fab fa-twitter fa-2x"></i></span>
+        <p class="ft-size-1-5rem">#Khadadu's</p>
+    </footer>
+</body>
+<script src="cake.js"></script>
+
+</html>

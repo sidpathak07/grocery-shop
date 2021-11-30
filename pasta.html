@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza's</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Coda+Caption:wght@800&family=Courgette&display=swap"
+        rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/b5468c0f73.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="cake.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Merienda+One&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pasta.css">
+<body>
+    <header>
+        <nav class="navbar margin-bottom-10px">
+            <img id="logo" src="images/Free_Sample_By_Wix.jpg" alt="" />
+            <p id="logoName">Khadadu's</p>
+            <ul class="mainUl">
+                <li id="home"><a href="index.html"> Home</a></li>
+                <li><a href="MyOrders.html">My Orders</a></li>
+            </ul>
+            <a href="mycart.html" id="cart" class="a">
+                <i class="fas fa-shopping-cart fa-2x"></i></a>
+            <span id="username"></span>
+        </nav>
+    </header>
+    <section id="special" class="polaroid"></section>
+    <h3 style="text-align:center;font-family: 'Merienda One', cursive;" class="ft-size-2rem">Pasta's</h3>
+    <section id="pasta-List" class="polaroid">
+        <div class="pastali">
+            <div>
+                <img width="150px" height="150px" src="images/pasta-dish-with-bread-on-white-ceramic-plate-998246.jpg" alt="">
+            </div>
+            <aside>
+                <h4>Pasta with garlic bread</h4>
+                <p>Price:-100/-</p>
+                <button class="btn" onclick="addcart(`images/pasta-dish-with-bread-on-white-ceramic-plate-998246.jpg`,`Pasta with garlic bread`,100)">Buy<i class="fas fa-cart-plus"></i></button>
+            </aside>
+        </div>
+        <div class="pastali">
+            <div>
+                <img width="150px" height="150px" src="images/pasta-noodles-tomato-sauce-spirelli-14737.jpg" alt="">
+            </div>
+            <aside>
+                <h4>White Sauce Pasta with Tomato Sauce</h4>
+                <p>Price:-110/-</p>
+                <button class="btn" onclick="addcart(`images/pasta-noodles-tomato-sauce-spirelli-14737.jpg`,`White Sauce Pasta with Tomato Sauce`,110)">Buy<i class="fas fa-cart-plus"></i></button>
+            </aside>
+        </div>
+        <div class="pastali">
+            <div>
+                <img width="150px" height="150px" src="images/flat-lay-photography-of-pasta-served-in-white-plate-1487511.jpg" alt="">
+            </div>
+            <aside>
+                <h4>Plain White Sauce Pasta</h4>
+                <p>Price:-100/-</p>
+                <button class="btn" onclick="addcart(`images/flat-lay-photography-of-pasta-served-in-white-plate-1487511.jpg`,`Plain White Sauce Pasta`,100)">Buy<i class="fas fa-cart-plus"></i></button>
+            </aside>
+        </div>
+        <div class="pastali">
+            <div>
+                <img width="150px" height="150px" src="images/cooked-pasta-on-brown-wooden-bowl-803963.jpg" alt="">
+            </div>
+            <aside>
+                <h4>White Sauce Pasta with veggie's</h4>
+                <p>Price:-150/-</p>
+                <button class="btn" onclick="addcart(`images/cooked-pasta-on-brown-wooden-bowl-803963.jpg`,`White Sauce Pasta with veggie's`,150)">Buy<i class="fas fa-cart-plus"></i></button>
+            </aside>
+        </div>
+        <div class="pastali">
+            <div>
+                <img width="150px" height="150px" src="images/pasta-on-white-plate-on-focus-photo-1527603.jpg" alt="">
+            </div>
+            <aside>
+                <h4>Red Sauce Pasta</h4>
+                <p>Price:-100/-</p>
+                <button class="btn" onclick="addcart(`images/pasta-on-white-plate-on-focus-photo-1527603.jpg`,`Red Sauce Pasta`,100)">Buy<i class="fas fa-cart-plus"></i></button>
+            </aside>
+        </div>
+        <div class="pastali">
+            <div>
+                <img width="150px" height="150px" src="images/close-up-photo-of-tortellini-2412950.jpg" alt="">
+            </div>
+            <aside>
+                <h4>Tortellini</h4>
+                <p>Price:-120/-</p>
+                <button class="btn" onclick="addcart(`images/close-up-photo-of-tortellini-2412950.jpg`,`Tortellini`,130)">Buy<i class="fas fa-cart-plus"></i></button>
+            </aside>
+        </div>
+    </section>
+    <span class="ft-size-2rem" style="font-family: 'Merienda One', cursive;">Cake's</span><a href="cake.html"
+        class="a ft-size-2rem"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a><br>
+    <span class="ft-size-2rem" style="font-family: 'Merienda One', cursive;">Pizza's</span><a href="pizza.html"
+        class="a ft-size-2rem"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a><br>
+    <span class="ft-size-2rem" style="font-family: 'Merienda One', cursive;">Burger's</span><a href="burger.html"
+        class="a ft-size-2rem"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a><br>
+    <footer class="center footer">
+        <h2>Follow</h2>
+        <span class="mg-right-5"><i class="fab fa-facebook-f fa-2x"></i></span>
+        <span class="mg-right-5"><i class="fab fa-instagram fa-2x"></i></span>
+        <span class="mg-right-5"><i class="fab fa-twitter fa-2x"></i></span>
+        <p class="ft-size-1-5rem">#Khadadu's</p>
+    </footer>
+</body>
+<script src="pasta.js"></script>
+</html>

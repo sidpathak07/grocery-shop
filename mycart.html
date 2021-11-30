@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Coda+Caption:wght@800&family=Courgette&display=swap"
+        rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/b5468c0f73.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Merienda+One&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@1&display=swap" rel="stylesheet">
+</head>
+<style>
+    #cartli {
+        width: 75%;
+        margin: auto;
+    }
+
+    .productli {
+        margin-top: 10px;
+    }
+
+    .productli .cart-product {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .cart-product aside {
+        text-align: start;
+        margin-left: 10px;
+        font-size: 2rem;
+    }
+
+    .productli button {
+        width: 85px;
+        height: 40px;
+        outline: none;
+        border: none;
+        padding: 3px;
+        margin: 5px;
+        background-color: hsl(200, 100%, 70%);
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: blue;
+    }
+
+    .btn2:hover {
+        background-color: red;
+    }
+
+    .btn-primary {
+        width: 85px;
+        height: 40px;
+        outline: none;
+        border: none;
+        padding: 3px;
+        margin: 5px;
+        background-color: hsl(200, 100%, 70%);
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    #BuyAll{
+        width:75%;
+        margin:auto;
+    }
+    #payall{
+        font-size: 2rem;
+    }
+    .mr-top-10px{
+        margin-top: 10px;
+    }
+    .fa-exclamation-triangle{
+        color: red;
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navbar margin-bottom-10px">
+            <img id="logo" src="images/Free_Sample_By_Wix.jpg" alt="" />
+            <p id="logoName">Khadadu's</p>
+            <ul class="mainUl">
+                <li id="home"><a href="index.html"> Home</a></li>
+                <li><a href="MyOrders.html">My Orders</a></li>
+            </ul>
+            <a href="mycart.html" id="cart" class="a">
+                <i class="fas fa-shopping-cart fa-2x"></i></a>
+            <span id="username"></span>
+        </nav>
+    </header>
+    <h1 class="center">My Cart</h1>
+    <section id="cartli" class="polaroid">
+
+    </section>
+    <section id="BuyAll" class="polaroid">
+        <!-- <span id="payall"></span>
+        <Button onclick="buyall()" class="btn-primary">Buy All</Button> -->
+    </section>
+    
+    
+</body>
+<script src="mycart.js"></script>
+
+</html>

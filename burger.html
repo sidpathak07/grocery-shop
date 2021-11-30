@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza's</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Coda+Caption:wght@800&family=Courgette&display=swap"
+        rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/b5468c0f73.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="cake.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Merienda+One&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="burger.css">
+<body>
+    <header>
+        <nav class="navbar margin-bottom-10px">
+            <img id="logo" src="images/Free_Sample_By_Wix.jpg" alt="" />
+            <p id="logoName">Khadadu's</p>
+            <ul class="mainUl">
+                <li id="home"><a href="index.html"> Home</a></li>
+                <li><a href="MyOrders.html">My Orders</a></li>
+            </ul>
+            <a href="mycart.html" id="cart" class="a">
+                <i class="fas fa-shopping-cart fa-2x"></i></a>
+            <span id="username"></span>
+        </nav>
+    </header>
+    <section id="special" class="polaroid"></section>
+    <h3 style="text-align:center;font-family: 'Merienda One', cursive;" class="ft-size-2rem">Burger's</h3>
+    <section id="burger-List" class="polaroid">
+        <div class="burgerli">
+            <div>
+                <img width="150px" height="150px" src="images/ham-burger-with-vegetables-1639557.jpg" alt="">
+            </div>
+            <aside>
+                <h4>Hamburger with vegetables</h4>
+                <p>Price:-50/-</p>
+                <button class="btn" onclick="addcart(`images/ham-burger-with-vegetables-1639557.jpg`,`Hamburger with vegetables`,50)">Buy<i class="fas fa-cart-plus"></i></button>
+            </aside>
+        </div>
+        <div class="burgerli">
+            <div>
+                <img width="150px" height="150px" src="images/burger-with-lettuce-and-cheese-on-a-white-plate-3738730.jpg" alt="">
+            </div>
+            <aside>
+                <h4>Burger with lettuce and cheese</h4>
+                <p>Price:-70/-</p>
+                <button class="btn" onclick="addcart(`images/burger-with-lettuce-and-cheese-on-a-white-plate-3738730.jpg`,`Burger with lettuce and cheese`,70)">Buy<i class="fas fa-cart-plus"></i></button>
+            </aside>
+        </div>
+        <div class="burgerli">
+            <div>
+                <img width="150px" height="150px" src="images/burger-with-sunny-side-up-on-white-surface-2293537.jpg" alt="">
+            </div>
+            <aside>
+                <h4>Egg Burger</h4>
+                <p>Price:-50/-</p>
+                <button class="btn" onclick="addcart(`images/burger-with-sunny-side-up-on-white-surface-2293537.jpg`,`Egg Burger`,50)">Buy<i class="fas fa-cart-plus"></i></button>
+            </aside>
+        </div>
+        <div class="burgerli">
+            <div>
+                <img width="150px" height="150px" src="images/close-up-photo-of-a-cheese-burger-1633578.jpg" alt="">
+            </div>
+            <aside>
+                <h4>Double Cheese Burger</h4>
+                <p>Price:-100/-</p>
+                <button class="btn" onclick="addcart(`images/close-up-photo-of-a-cheese-burger-1633578.jpg`,`Double Cheese Burger`,100)">Buy<i class="fas fa-cart-plus"></i></button>
+            </aside>
+        </div>
+        <div class="burgerli">
+            <div>
+                <img width="150px" height="150px" src="images/classic-hamburger-and-french-fries-on-wooden-board-1556688.jpg" alt="">
+            </div>
+            <aside>
+                <h4>Hamburger With French Fries</h4>
+                <p>Price:-100/-</p>
+                <button class="btn" class="btn" onclick="addcart(`images/classic-hamburger-and-french-fries-on-wooden-board-1556688.jpg`,`Hamburger With French Fries`,100)">Buy<i class="fas fa-cart-plus"></i></button>
+            </aside>
+        </div>
+    </section>
+    <span class="ft-size-2rem" style="font-family: 'Merienda One', cursive;">Cake's</span><a href="cake.html"
+        class="a ft-size-2rem"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a><br>
+    <span class="ft-size-2rem" style="font-family: 'Merienda One', cursive;">Pizza's</span><a href="pizza.html"
+        class="a ft-size-2rem"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a><br>
+    <span class="ft-size-2rem" style="font-family: 'Merienda One', cursive;">Pasta's</span><a href="pasta.html"
+        class="a ft-size-2rem"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a><br>
+    <footer class="center footer">
+        <h2>Follow</h2>
+        <span class="mg-right-5"><i class="fab fa-facebook-f fa-2x"></i></span>
+        <span class="mg-right-5"><i class="fab fa-instagram fa-2x"></i></span>
+        <span class="mg-right-5"><i class="fab fa-twitter fa-2x"></i></span>
+        <p class="ft-size-1-5rem">#Khadadu's</p>
+    </footer>
+</body>
+<script src="burger.js"></script>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khadadu's Login</title>
+</head>
+<style>
+    body {
+        /* background: url("images/back1.jpg"); */
+        background-image: linear-gradient(#2193b0,#6dd5ed);
+        background-repeat: no-repeat;
+        background-size: 100vw 100vh;
+    }
+
+    .container {
+        display: block;
+        width: 50%;
+        margin: auto;
+        height: 70vh;
+        /* position: relative; */
+        text-align: center;
+        margin-top: 128px;
+        /* left: 800px; */
+        background-color: #eeeeee;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px #00000027, -5px -5px 10px #ffffff;
+    }
+
+    .container img {
+        display: block;
+        margin: auto;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        box-shadow: 0 0px 5px 6px lightgrey;
+    }
+
+    #user {
+        display: block;
+        margin: auto;
+        width: 200px;
+        height: 30px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        box-shadow: inset 0px 0px 15px lightgrey;
+        transition: transform 1s;
+    }
+
+    #password {
+        display: block;
+        margin: auto;
+        width: 200px;
+        height: 30px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        box-shadow: inset 0px 0px 15px lightgrey;
+        transition: transform 1s;
+    }
+
+    #user:hover,
+    #password:hover {
+        box-shadow: 0 0px 5px 6px lightgrey;
+        transform: scale(1.05);
+    }
+
+    #loginBtn {
+        margin-top: 20px;
+        width: 85px;
+        height: 40px;
+        outline: none;
+        border: none;
+        background-color: hsl(200, 100%, 70%);
+        border-radius: 20px;
+        cursor: pointer;
+        transition: transform 1s;
+    }
+
+    #loginBtn a {
+        text-decoration: none;
+        color: white;
+    }
+
+    #loginBtn:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0px 5px 6px lightgrey;
+    }
+
+    @media only screen and (min-width: 1400px) {
+        #user {
+            display: block;
+            margin: auto;
+            width: 300px;
+            height: 50px;
+            outline: none;
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            box-shadow: inset 0px 0px 15px lightgrey;
+            transition: transform 1s;
+        }
+
+        #password {
+            display: block;
+            margin: auto;
+            width: 300px;
+            height: 50px;
+            outline: none;
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            box-shadow: inset 0px 0px 15px lightgrey;
+            transition: transform 1s;
+        }
+
+        #loginBtn {
+            margin-top: 20px;
+            width: 100px;
+            height: 60px;
+            outline: none;
+            border: none;
+            background-color: hsl(200, 100%, 70%);
+            border-radius: 20px;
+            cursor: pointer;
+            transition: transform 1s;
+        }
+    }
+
+    @media only screen and (min-width: 200px) and (max-width: 500px) {
+        #user {
+            display: block;
+            margin: auto;
+            width: 50%;
+            height: 70px;
+            outline: none;
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            box-shadow: inset 0px 0px 15px lightgrey;
+            transition: transform 1s;
+        }
+
+        #password {
+            display: block;
+            margin: auto;
+            width: 50%;
+            height: 70px;
+            outline: none;
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            box-shadow: inset 0px 0px 15px lightgrey;
+            transition: transform 1s;
+        }
+
+        #loginBtn {
+            margin-top: 20px;
+            width: 100px;
+            height: 60px;
+            outline: none;
+            border: none;
+            background-color: hsl(200, 100%, 70%);
+            border-radius: 20px;
+            cursor: pointer;
+            transition: transform 1s;
+        }
+
+        .container img {
+            width: 50%;
+            height: 25%;
+            display: block;
+            margin: auto;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            box-shadow: 0 0px 5px 6px lightgrey;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <img src="images/Free_Sample_By_Wix.jpg" alt="">
+        <input type="text" name="username" id="user" placeholder="Enter Name">
+        <input type="password" name="password" id="password" placeholder="Enter Pasword">
+        <button id="loginBtn"><a href="index.html">Login</a></button>
+    </div>
+</body>
+<script src="login.js"></script>
+
+</html>

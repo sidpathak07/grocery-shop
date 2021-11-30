@@ -1,0 +1,50 @@
+/* Header */
+.margin-bottom-10px {
+    margin-bottom: 10px;
+  }
+  /* Special */
+  #special{
+    width: 100%;
+    height: 50vh;
+    background-image: url("images/red-soup-with-alphabet-pasta-3832339.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Cake List */
+  #pasta-List {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin-top: 30px;
+    margin: auto;
+  }
+  .pastali div {
+    margin-right: 10px;
+  }
+  .pastali {
+    font-family: 'Ubuntu Mono', monospace;
+    width: 30%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    /* background-color: aqua; */
+  }
+  .pastali button{
+    width: 85px;
+    height: 40px;
+    outline: none;
+    border: none;
+    padding: 3px;
+    margin: 5px;
+    background-color: hsl(200, 100%, 70%);
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .btn:hover{
+      background-color: blue;
+  }
+  
+  

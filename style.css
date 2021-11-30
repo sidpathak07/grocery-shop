@@ -1,0 +1,314 @@
+/* Uitility Classes */
+.h1-primary{
+    margin-top: 5px;;
+    font-size: 3rem;
+}
+.ft-size-2rem{
+    font-size:2rem;
+}
+.ft-size-1-5rem{
+    font-size: 1.5rem;
+}
+.center{
+    text-align: center;
+    margin: 10px 0 5px;
+}
+.polaroid{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.active{
+    /* background-color: blanchedalmond; */
+   /* background:  linear-gradient(45.34deg, #EA52F8 5.66%, #0066FF 94.35%); */
+   color:blue;
+}
+.fa-facebook-f{
+    background-color: blue;
+    color: white;
+}
+.fa-instagram{
+    color: #EA52F8;
+}
+.fa-twitter{
+    color: #0066FF;
+}
+.fa{
+    margin-left: 5px;
+}
+.fas{
+    margin-right: 10px;
+}
+.fa-bell{
+    display: inline-block;
+    animation:offer 1s infinite;
+}
+.margin-bottom-5px{
+    margin-bottom: 5px;
+}
+.mg-right-5{
+    margin-right: 5px;
+}
+@-webkit-keyframes offer{
+    0%{
+        transform: rotate(30deg);
+    }
+    25%{
+        transform: rotate(-30deg);
+    }
+    50%{
+        transform: rotate(30deg);
+    }
+    75%{
+        transform: rotate(-30deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+/* Header Section */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    height: 50px;
+    width: 100vw;
+    font-family: 'Merienda One', cursive;
+    /* background-color: lightgray; */
+}
+#logo{
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+#logoName{
+    float: left;
+    margin-left: 5px;
+    margin-top: 15px;
+    font-size: 30px;
+    background-image:-webkit-linear-gradient(90deg, #EA52F8 5.66%, #0066FF 94.35%);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    animation: glow 10s infinite linear;
+}
+@-webkit-keyframes glow{
+    0%{
+        background-image:-webkit-linear-gradient(90deg, #EA52F8 5.66%, #0066FF 94.35%);
+        -webkit-background-clip:text;
+        -webkit-text-fill-color:transparent;
+    }
+    25%{
+        background-image:-webkit-linear-gradient(90deg ,#EA52F8 70%, #0066FF 30%);
+        -webkit-background-clip:text;
+        -webkit-text-fill-color:transparent;
+    }
+    50%{
+        background-image:-webkit-linear-gradient(45deg, #EA52F8 50%, #0066FF 50%,);
+        -webkit-background-clip:text;
+        -webkit-text-fill-color:transparent;
+    }
+    75%{
+        background-image:-webkit-linear-gradient(90deg, #0066FF 70%, #EA52F8 30%);
+        -webkit-background-clip:text;
+        -webkit-text-fill-color:transparent;
+    }
+    100%{
+        background-image:-webkit-linear-gradient(90%, #0066FF 5.35%, #EA52F8 94.66%);
+        -webkit-background-clip:text;
+        -webkit-text-fill-color:transparent;
+    }
+}
+.mainUl li{
+    float: left;
+    margin-left:60px ;
+    margin-top: 10px;
+    font-size: 20px;
+    list-style: none;
+    cursor: pointer;
+}
+.mainUl li a{
+    color: black;
+    text-decoration: none;
+}
+#products{
+    margin-top: 10px;
+    height: 5rem;
+}
+#products li{
+    float: none;
+    margin: 0;
+    margin-top: 1px;
+    display:none;
+    /* border: 1px solid black; */
+    font-family: 'Merienda One', cursive;
+}
+#products li a{
+    color: white;
+    text-decoration: none;
+}
+#Product:hover #products li{
+ display: block;   
+ cursor: pointer;
+ /* animation: drop 2s ease forwards; */
+ font-family: 'Merienda One', cursive;
+ color: white;
+}
+/* @keyframes drop{
+    0%{opacity: 0;transform: rotateZ(30deg) translateY(10px);}
+    100%{transform: rotateZ(0deg) translateY(0px);}
+} */
+#username{
+    display: inline-block;
+    font-size: 22px;
+    margin-right: 60px;
+    margin-top: 10px;
+    float:right;
+}
+#cart{
+    display: inline-block;
+    float:right;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+
+/* Explore */
+.Explore{
+    width: 100%;
+    height: 578px;
+    background-image: url("images/close-up-photo-of-burger-1639562.jpg");
+    background-size: 100vw 100vh;
+    /* background-size: cover; */
+    /* object-fit:contain; */
+    background-repeat: no-repeat;
+    /* opacity: 0.8; */
+    color: yellow;
+    margin-bottom: 50px;
+}
+.firstOrder{
+    width: 30vw;
+    height: 30vh;
+    text-align: center;
+    position: relative;
+    left: 5rem;
+    top: 15rem;
+}
+.firstOrder p{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
+}
+.firstOrder p span{
+    font-size: 2.5rem;
+}
+.a{
+    text-decoration: none;
+    color: black;
+}
+.exploreBtn{
+    /* margin-top: 20px; */
+        width: 85px;
+        height: 40px;
+        outline: none;
+        border:none;
+        background-color:yellow;
+        border-radius: 20px;
+        cursor: pointer;
+}
+/* Gallery */
+#gallery{
+    width:90%;
+    margin:auto;
+}
+#gallery span{
+    font-family: 'Bangers', cursive;
+}
+#gallery p{
+    font-family: 'Courgette', cursive;
+}
+.cake,.pizza,.burger,.pasta{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.aside{
+    padding: 5px;
+}
+.aside img{
+    width: 250px;
+    height: 240px;
+}
+.mainImg img{
+    width: 500px;
+    height: 500px;
+}
+/* Footer */
+.footer{
+    background-color: lightgrey;
+}
+.footer p{
+    font-family: 'Coda Caption', sans-serif;
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 950px){
+    .navbar{
+        height: 50px;
+        width: 100vw;
+        font-family: 'Merienda One', cursive;
+        /* background-color: lightgray; */
+    }
+    #username{
+        display: inline-block;
+        font-size: 22px;
+        margin-right: 60px;
+        margin-top: 10px;
+        float:right;
+    }
+    .Explore{
+        width: 100%;
+        height: 578px;
+        background-image: url("images/close-up-photo-of-burger-1639562.jpg");
+        overflow-x: hidden;
+        background-size:cover;
+        /* background-size: cover; */
+        /* object-fit:contain; */
+        /* background-repeat: no-repeat; */
+        /* opacity: 0.8; */
+        color: yellow;
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 950px) and (min-width: 600px)  {
+    body{
+        overflow-x: hidden;
+        background-color: #EA52F8;
+    }
+    .Explore{
+        width: 100%;
+        height: 578px;
+        background-image: url("images/close-up-photo-of-burger-1639562.jpg");
+        overflow-x: hidden;
+        background-size:cover;
+        /* background-size: cover; */
+        /* object-fit:contain; */
+        /* background-repeat: no-repeat; */
+        /* opacity: 0.8; */
+        color: yellow;
+        margin-bottom: 50px;
+    }
+    .navbar{
+        width: 100vw;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .mainUl li{
+        display: block;
+    }
+}

@@ -1,0 +1,158 @@
+/* Header */
+.margin-bottom-10px {
+  margin-bottom: 10px;
+}
+/* Special */
+#special {
+  background-image: url("images/pastry-on-brown-tray-2349996.jpg");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+#special h2 {
+  font-family: "Lobster", cursive;
+  text-decoration: underline;
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  color: white;
+  font-size: 2.5rem;
+}
+.special {
+  text-align: center;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courgette", cursive;
+}
+.special button {
+  width: 85px;
+  height: 40px;
+  outline: none;
+  border: none;
+  padding: 3px;
+  margin: 5px;
+  background-color: hsl(200, 100%, 70%);
+  border-radius: 10px;
+  cursor: pointer;
+}
+/* .btn{
+  width: 85px;
+  height: 40px;
+  outline: none;
+  border: none;
+  padding: 3px;
+  margin: 5px;
+  background-color: hsl(200, 100%, 70%);
+  border-radius: 10px;
+  cursor: pointer;
+} */
+.special button:hover {
+  box-shadow: 0 0px 5px 6px lightgrey;
+}
+.flipcard {
+  /* display: inline-block; */
+  width: 300px;
+  height: 200px;
+  position: relative;
+  margin-right: 10px;
+}
+.card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 3s ease;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.front {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  /* background-color: white; */
+}
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  background-color: white;
+}
+
+.flipcard2 {
+  /* display: inline-block; */
+  width: 300px;
+  height: 200px;
+  position: relative;
+  margin-left: 10px;
+}
+.card2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 3s ease;
+}
+.card2:hover {
+  transform: rotateY(180deg);
+}
+.front2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  backface-visibility: hidden;
+  /* background-color: white; */
+}
+.back2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  background-color: white;
+}
+
+/* Cake List */
+#Cake-List {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  margin: auto;
+}
+.cakeli div {
+  margin-right: 10px;
+}
+.cakeli {
+  font-family: 'Ubuntu Mono', monospace;
+  width: 30%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  /* background-color: aqua; */
+}
+.cakeli button{
+  width: 85px;
+  height: 40px;
+  outline: none;
+  border: none;
+  padding: 3px;
+  margin: 5px;
+  background-color: hsl(200, 100%, 70%);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: blue;
+}
